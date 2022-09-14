@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color:hsl(30, 38%, 92%);
+}
+
+.card{
+    display: flex;
+    width: 600px;
+    height: 450px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 1em;
+
+}
+
+.card__left{
+    width: 50%;
+    display: flex;
+    border-radius: 1rem;
+}
+
+.card__left source, .card__left img{
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.card__right{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em 0.5em 2em;
+}
+
+.card__text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-top: 0;
+    line-height: 1.5em;;
+}
+
+.card__text--uppercase{
+    margin: 0;
+    font-size: 12px;
+    text-transform:uppercase;
+    letter-spacing: 5px;    
+}
+
+.card__title, .card__text--big{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.card__price{
+    display: flex;
+    margin: .5rem;
+}
+
+.card__text--big{
+    color: hsl(158, 36%, 37%);
+    margin-right: 1rem;
+}
+
+.card__text--small{
+    text-decoration: line-through;
+    margin-top: 0.3em;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 3rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;    
+}
+
+.button:hover{
+    background-color: hsl(158, 36%, 16%);
+    transition: .5s;
+}
+
+.button__icon{
+    margin-right: 10px;
+}
+
+@media (max-width: 400px){
+
+    body{
+        width: 100%;
+    }
+
+    .card{
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .card__left img{
+        width: 400%;
+        border-radius: 1rem 1rem 0 0;
+   }
+
+   .card__right{
+        padding: 1.5rem 1rem;
+   }
+
+   .card__price{
+        height: 40px;
+   }
+
+   .button{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+}
+
+/* frontend mentor code */
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+ 
+    /* font-family: 'Fraunces', serif; */
+    /* font-family: 'Montserrat', sans-serif; */
